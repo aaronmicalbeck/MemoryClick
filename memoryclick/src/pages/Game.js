@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Card from "../components/card/Card";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
+import createDeck from "../components/deck/deck";
 
 class Game extends Component {
     state = {
@@ -18,11 +19,13 @@ class Game extends Component {
     handleCardClick = event => {
         event.preventDefault();
         console.log("Card has been clicked");
+        this.loadCards();
+
 
      };
 
      loadCards = () => {
-
+        createDeck();
 
      }
 
