@@ -1,5 +1,6 @@
 import React from "react";
-import Score from "../components/Score";
+import Score from "../score/Score";
+import "./style.css"
 
 function Header (){
     return(

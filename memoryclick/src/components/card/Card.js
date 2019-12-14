@@ -1,18 +1,20 @@
 import React, {Component} from "react";
+import "./style.css"
 
 class Card extends Component{
     state= {
 
       image: "",
       clicked: false,
-      matched: false 
+      id: ""
   
   }
 
   render(){
     return (
 
-      <div className = "card">
+      <div className = "card" onClick={this.props.onClick}>
+        
 
         This is a card!
 
