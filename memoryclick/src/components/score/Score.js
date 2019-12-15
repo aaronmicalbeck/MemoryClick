@@ -1,14 +1,23 @@
-import React from "react";
+import React, {Component} from "react";
 import "./style.css"
 
 
-function Score(){
-    return (
-        <div>
-            <h2>This is your score.</h2>
+class Score extends Component {
+
+
+
+
+    render() {
+      return (
+  
+        <div className="score" score={this.props.score} topScore={this.props.topScore}>
+          <p>Yo Score</p>
         </div>
-
-    )
-}
-
+      )
+  
+  
+    }
+  
+  }
+  
 export default Score;

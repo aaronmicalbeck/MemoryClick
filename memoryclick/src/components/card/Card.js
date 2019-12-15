@@ -1,30 +1,21 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "./style.css"
 
-class Card extends Component{
-    state= {
+class Card extends Component {
 
-      image: "",
-      clicked: false,
-      id: ""
-  
-  }
 
-  render(){
+
+  render() {
     return (
 
-      <div className = "card" onClick={this.props.onClick}>
-        
-
-        This is a card!
-
-      
-    </div>
+      <div className="card" onClick={this.props.onClick}>
+        <img src={this.props.image} alt=""/>
+      </div>
     )
 
-    
-  }
 
   }
-  
-  export default Card;
+
+}
+
+export default Card;
